@@ -1,0 +1,24 @@
+openapi: 3.0.3
+info:
+  description: "This REST endpoint handles creation, editing, and deleting all the\
+    \ possible inputs to a simulation, such as user, simulation, species variables..."
+  title: Corridor Explorer Simulation Input
+  version: 1.0.0
+servers:
+- description: The development server
+  url: http://localhost:8080/v1
+paths:
+  /test:
+    get:
+      operationId: testServer
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                type: string
+          description: just a test string to show it works
+      summary: Just for a hello world and to see if it works
+      x-accepts: text/plain
+components:
+  schemas: {}
